@@ -1,0 +1,21 @@
+{
+    "name": "@paloit-oss/react-typescript-cli",
+    "version": "1.0.0",
+    "description": "CLI for ReactJS with Typescript",
+    "license": "MIT",
+    "repository": "https://github.com/paloit-oss/react-typescript-cli",
+    "main": "./lib/index.js",
+    "bin": {
+        "rct-ts-cli": "./bin/index.js"
+    },
+    "scripts": {
+        "commit": "commit",
+        "commitmsg": "commitlint -e $GIT_PARAMS"
+    },
+    "dependencies": {
+        "@commitlint/cli": "5.2.5",
+        "@commitlint/config-angular": "5.1.1",
+        "@commitlint/prompt-cli": "5.2.5",
+        "husky": "0.14.3"
+    }
+}
