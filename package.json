@@ -1,12 +1,12 @@
 {
-    "name": "@paloit-oss/react-typescript-cli",
+    "name": "@paloit-oss/react-cli",
     "version": "1.0.0",
-    "description": "CLI for ReactJS with Typescript",
+    "description": "CLI for ReactJS based on Universal Frontend Architecture",
     "license": "MIT",
-    "repository": "https://github.com/paloit-oss/react-typescript-cli",
+    "repository": "https://github.com/paloit-oss/react-cli",
     "main": "./lib/index.js",
     "bin": {
-        "rct-ts-cli": "./bin/index.js"
+        "react-cli": "./bin/index.js"
     },
     "scripts": {
         "commit": "commit",
