@@ -1,10 +1,9 @@
 const webpackMerge = require('webpack-merge');
-const packageJSON = require(process.cwd() + '/package.json');
+const packageConfig = require(process.cwd() + '/config.json');
 
-packageJSON.config = packageJSON.config || {};
-packageJSON.config.cli = packageJSON.config.cli || {};
+packageConfig.cli = packageConfig.cli || {};
 
-var cliDefaultConfigs = {
+const cliDefaultConfigs = {
     minimumNodeVersion: 8,
     folderPaths : {
         prod: './dist',
@@ -19,4 +18,4 @@ var cliDefaultConfigs = {
         emulatorAPIFolderPath: '/api-endpoints'
     }
 };
-module.exports = webpackMerge(cliDefaultConfigs, packageJSON.config.cli);
+module.exports = webpackMerge(cliDefaultConfigs, packageConfig.cli);
