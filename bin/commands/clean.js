@@ -23,6 +23,6 @@ exports.builder = {
 
 exports.handler = (argv) => {
     const chalk = require('chalk');
-    console.log(chalk.yellow('[COMMAND: UFA CLI] Clean'));
+    console.log(chalk.yellow('[COMMAND: React CLI] Clean'));
     require('../../lib/index').clean(argv);
 };

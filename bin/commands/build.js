@@ -11,6 +11,6 @@ exports.builder = {
 };
 exports.handler = (argv) => {
     const chalk = require('chalk');
-    console.log(chalk.yellow('[COMMAND: UFA CLI] Build:', argv.mode));
+    console.log(chalk.yellow('[COMMAND: React CLI] Build:', argv.mode));
     require('../../lib/index').build(argv);
 };

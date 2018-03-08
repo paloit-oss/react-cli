@@ -11,6 +11,6 @@ exports.builder = {
 };
 exports.handler = (argv) => {
     const chalk = require('chalk');
-    console.log(chalk.yellow('[COMMAND: UFA CLI] Extract Mock API'));
+    console.log(chalk.yellow('[COMMAND: React CLI] Extract Mock API'));
     require('../../lib/index').extractMockAPI(argv);
 };

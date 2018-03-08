@@ -4,6 +4,6 @@ exports.desc = 'NodeJS Version Check';
 
 exports.handler = (argv) => {
     const chalk = require('chalk');
-    console.log(chalk.yellow('[COMMAND: UFA CLI] Check NodeJS Version'));
+    console.log(chalk.yellow('[COMMAND: React CLI] Check NodeJS Version'));
     require('../../lib/index').checkNodeJSVersion(argv);
 };
